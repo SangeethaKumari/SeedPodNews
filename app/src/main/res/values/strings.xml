@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SeedPodNews</string>
+    <string name="no_news_found">No News found.</string>
+    <string name="no_internet_connection">No Internet Connection.</string>
+    <string name="title">Long placeholder location that
+            should wrap to more than 4 lines of news title text</string>
+    <string name="sectionName">Technology</string>
+    <string name="sectionId">O</string>
+    <string name="webPublicationDate">6 Aug 2018</string>
+    <string name="authorName">Sangeetha</string>
+
+</resources>

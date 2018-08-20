@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Dimensions for the activity_main.xml -->
+    <dimen name="sectionId_width">42dp</dimen>
+    <dimen name="sectionId_height">42dp</dimen>
+    <dimen name="sectionId_textSize">16sp</dimen>
+
+    <dimen name="news_title_layout_width">0dp</dimen>
+    <dimen name="news_title_layout_margin_left">8dp</dimen>
+    <dimen name="news_title_layout_padding_bottom">4dp</dimen>
+
+    <dimen name="title_textSize">16sp</dimen>
+
+    <dimen name="news_other_details_layout_margin_left">8dp</dimen>
+    <dimen name="news_other_details_layout_padding_bottom">4dp</dimen>
+
+    <dimen name="section_name_textSize">12sp</dimen>
+    <dimen name="webPublicationDate_textSize">12sp</dimen>
+    <dimen name="author_textSize">12sp</dimen>
+
+    <dimen name="news_image_circle_width">42dp</dimen>
+    <dimen name="news_image_circle_height">42dp</dimen>
+    <dimen name="news_image_circle_radius">18dp</dimen>
+
+    <!--Dimensions for the list.xml -->
+    <dimen name="listView_padding">16dp</dimen>
+    <dimen name="listView_dividerHeight">1px</dimen>
+
+
+
+
+</resources>

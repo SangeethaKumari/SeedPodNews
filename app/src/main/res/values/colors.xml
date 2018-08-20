@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="colorPrimary">#2B3D4D</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="colorPrimaryDark">#23303D</color>
+
+    <!-- Accent color of the app -->
+    <color name="colorAccent">#10CAC9</color>
+
+    <color name="listBackgroundColor">#A9BDCF</color>
+
+    <!-- Color for an earthquake with magnitude 0 and 2 -->
+    <color name="news1">#4A7BA7</color>
+
+    <!-- Text color for the authorName in the list item -->
+    <color name="textColorAuthorName">#64676B</color>
+
+    <!-- Text color for the date in the list item -->
+    <color name="textColorDate">#64676B</color>
+
+    <!-- Text color for the sectionName in the list item -->
+    <color name="textColorSectionName">#64676B</color>
+
+    <!-- Text color for the sectionId with sectionName value "technology" in the list item -->
+    <color name="technology">#F5A623</color>
+
+    <!-- Text color for the sectionId with sectionName value "games" in the list item -->
+    <color name="games">#4F0D17</color>
+
+    <!-- Text color for the sectionId with sectionName value "opinion" in the list item -->
+    <color name="opinion">#204ed3</color>
+
+    <!-- Text color for the sectionId with sectionName value "business" in the list item -->
+    <color name="business">#E75F40</color>
+
+    <!-- Text color for the sectionId with sectionName value "help" in the list item -->
+    <color name="help">#7EB19A</color>
+
+    <!-- Text color for the sectionId with sectionName value "culture" in the list item -->
+    <color name="culture">#c097aa</color>
+
+    <!-- Text color for the sectionId with sectionName value "books" in the list item -->
+    <color name="books">#BD00FF</color>
+
+    <!-- Text color for the sectionId with sectionName value "science" in the list item -->
+    <color name="science">#7EB19A</color>
+
+    <!-- Text color for the sectionId with sectionName value "lifestyle" in the list item -->
+    <color name="lifestyle">#45425c</color>
+
+    <!-- Text color for the sectionId with sectionName value "others" in the list item -->
+    <color name="others">#10CAC9</color>
+
+    <!-- Color values for the file list.xml -->
+    <!-- ListView divider color-->
+    <color name="listView_divider">#F5A623</color>
+</resources>
