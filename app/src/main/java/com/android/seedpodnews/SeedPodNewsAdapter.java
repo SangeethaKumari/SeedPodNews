@@ -17,11 +17,8 @@ import java.util.List;
 
 public class SeedPodNewsAdapter extends ArrayAdapter<News> {
 
-    private List<News> newsList;
-
     public SeedPodNewsAdapter(Context context, List<News> newsList) {
         super(context, 0, newsList);
-        this.newsList = newsList;
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -30,7 +27,7 @@ public class SeedPodNewsAdapter extends ArrayAdapter<News> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.activity_main, parent, false);
+                    R.layout.list, parent, false);
         }
 
         // Find the news at the given position in the list of news
