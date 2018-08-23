@@ -3,7 +3,6 @@ package com.android.seedpodnews;
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -87,13 +86,20 @@ public class SeedPodNewsAdapter extends ArrayAdapter<News> {
         String sectionIdText = null;
 
         String caseValue = sectionName.toLowerCase();
-
         switch (caseValue) {
             case "technology":
                 sectionIdColorResourceId = R.color.technology;
                 sectionIdText = "T";
                 break;
             case "games":
+                sectionIdColorResourceId = R.color.games;
+                sectionIdText = "G";
+                break;
+            case "sport":
+                sectionIdColorResourceId = R.color.games;
+                sectionIdText = "G";
+                break;
+            case "football":
                 sectionIdColorResourceId = R.color.games;
                 sectionIdText = "G";
                 break;
@@ -108,6 +114,10 @@ public class SeedPodNewsAdapter extends ArrayAdapter<News> {
             case "help":
                 sectionIdColorResourceId = R.color.help;
                 sectionIdText = "H";
+                break;
+            case "music":
+                sectionIdColorResourceId = R.color.music;
+                sectionIdText = "M";
                 break;
             case "business":
                 sectionIdColorResourceId = R.color.business;
