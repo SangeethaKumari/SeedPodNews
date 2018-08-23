@@ -182,14 +182,25 @@ public final class QueryUtils {
                 // Extract the value for the key called "url"
                 String url = currentNews.getString("webUrl");
 
-                // Extract the JSONArray associated with the key called "tags",
-                // which represents a list of news stories
-                JSONArray tagArray = currentNews.getJSONArray("tags");
-                String authorName ="" ;
-                if(tagArray!=null && tagArray.length()>0){
-                    JSONObject authorTag = (JSONObject) tagArray.get(0);
-                    // Extract the value for the key called "url"
-                     authorName= authorTag.getString("webTitle");
+
+                String authorName = "";
+                //Check if the JSON object has the key "tags"
+                if(currentNews.has("tags")) {
+                    // Extract the JSONArray associated with the key called "tags",
+                    // which represents a list of news stories
+                    JSONArray tagArray = currentNews.getJSONArray("tags");
+                   if (tagArray != null && tagArray.length() > 0) {
+                       JSONObject authorTag = (JSONObject) tagArray.get(0);
+                       // Extract the value for the key called "url"
+                       authorName = authorTag.getString("webTitle");
+                   }
+               }else if(currentNews.has("fields")) {
+                    // Extract the JSONObject associated with the key called "fields"
+                    JSONObject fieldsObject = currentNews.getJSONObject("fields");
+                    if (fieldsObject != null && fieldsObject.has("byline")) {
+                        // Extract the value for the key called "byline"
+                        authorName = fieldsObject.getString("byline");
+                    }
                 }
                 // Create a new {@link News} object with the magnitude, location, time,
                 // and url from the JSON response.
