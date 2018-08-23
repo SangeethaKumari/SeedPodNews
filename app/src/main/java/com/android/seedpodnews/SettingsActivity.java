@@ -1,5 +1,6 @@
 package com.android.seedpodnews;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -15,6 +16,14 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
     }
+
+    @Override
+    public void onBackPressed() {
+        //reload the main activity on click of back button(back key event) of the device.
+        Intent mainActivity = new Intent(this, MainActivity.class);
+        startActivity(mainActivity);
+    }
+
     public static class SeedPodNewsPreferenceFragment extends PreferenceFragment
             implements Preference.OnPreferenceChangeListener  {
 
